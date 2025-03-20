@@ -19,7 +19,7 @@ plt.grid(True)
 # 离散信号：单位阶跃信号
 # ----------------------------
 n = np.arange(-5, 6)                      # 离散时间点（-5到5）
-discrete_signal = np.where(n >= 0, 1, 0)  # 阶跃信号：n≥0时为1，否则为0
+discrete_signal = np.where(n >= 0, 1, 0)  
 
 plt.subplot(1, 2, 2)  # 创建子图2
 plt.stem(n, discrete_signal, linefmt='r-', markerfmt='ro', basefmt='k-')
